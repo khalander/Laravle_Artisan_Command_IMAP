@@ -28,8 +28,8 @@ All arguments are optional<br />
 If you want to pass user credentials then need to as 2ed and 3ed parameter<br /><br />
 <b>Default values are</b><br />
 type: UNSEEN (For option more please refer reference link)<br />
-emailId:compassites098@gmail.com<br />
-password:test0987654321<br /><br />
+emailId: compassites098@gmail.com<br />
+password: test0987654321<br /><br />
 
 <b>php artisan read:email </b><br />
 If we execute this command it will take all default values<br />
