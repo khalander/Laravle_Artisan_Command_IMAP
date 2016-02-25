@@ -17,7 +17,7 @@ Then Create a artisan command <br />
 </b>
 php artisan make:console getUserEmailList --command=read:email<br />
 This creates a command skeleton in app/Console/Commands/getUserEmailList.php<br />
-You can copy paste the code which in this file into your own file<br />
+You can copy paste the code which is in this file into your own file<br />
 </p>
 <p>
 <b>Execute the file</b><br />
