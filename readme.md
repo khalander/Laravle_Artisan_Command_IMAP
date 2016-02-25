@@ -20,7 +20,7 @@ This creates a command skeleton in app/Console/Commands/getUserEmailList.php<br 
 You can copy paste the code which in this file into your own file<br />
 </p>
 <p>
-<b>Execute the file</b>
+<b>Execute the file</b><br />
 Syntax:<br />
 php artisan read:email [type, emailId, Password]<br />
  <b>Note:</b><br />
