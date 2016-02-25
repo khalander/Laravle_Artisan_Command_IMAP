@@ -22,21 +22,21 @@ You can copy paste the code which in this file into your own file<br />
 <p>
 <b>Execute the file</b><br />
 Syntax:<br />
-php artisan read:email [type, emailId, Password]<br />
+php artisan read:email [type, emailId, Password]<br /><br />
  <b>Note:</b><br />
 All arguments are optional<br />
-If you want to pass user credentials then need to as 2ed and 3ed parameter<br />
+If you want to pass user credentials then need to as 2ed and 3ed parameter<br /><br />
 <b>Default values are</b><br />
 type: UNSEEN (For more please refer reference link)<br />
 emailId:compassites098@gmail.com<br />
-password:test0987654321<br />
+password:test0987654321<br /><br />
 
 <b>php artisan read:email </b><br />
 If we execute this command it will take all default values<br />
-and gets all unread mails <br />
+and gets all unread mails <br /><br />
  
 <b>php artisan read:email ALL</b><br />
-Will get all mails from default user account<br />
+Will get all mails from default user account<br /><br />
 
 <b>php artisan read:email SEEN compassites098@gmail.com test0987654321</b><br />
 Will get all read mails from given user account<br />
@@ -47,6 +47,6 @@ Will get all read mails from given user account<br />
 - Need to customize for all hosts<br />
 </p>
 <p>
-Reference link:<br />
+<b>Reference link:<b/><br />
 https://arjunphp.com/reading-emails-from-gmail-using-php-imap/
 </p>
