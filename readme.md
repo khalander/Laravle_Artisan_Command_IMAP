@@ -27,7 +27,7 @@ php artisan read:email [type, emailId, Password]<br /><br />
 All arguments are optional<br />
 If you want to pass user credentials then need to as 2ed and 3ed parameter<br /><br />
 <b>Default values are</b><br />
-type: UNSEEN (For more please refer reference link)<br />
+type: UNSEEN (For option more please refer reference link)<br />
 emailId:compassites098@gmail.com<br />
 password:test0987654321<br /><br />
 
