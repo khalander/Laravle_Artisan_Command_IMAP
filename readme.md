@@ -1,21 +1,45 @@
-# Lumen PHP Framework
+# Lumen version of Reading emails from gmail using artisan command & IMAP
 
-[![Build Status](https://travis-ci.org/laravel/lumen-framework.svg)](https://travis-ci.org/laravel/lumen-framework)
-[![Total Downloads](https://poser.pugx.org/laravel/lumen-framework/d/total.svg)](https://packagist.org/packages/laravel/lumen-framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/lumen-framework/v/stable.svg)](https://packagist.org/packages/laravel/lumen-framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/lumen-framework/v/unstable.svg)](https://packagist.org/packages/laravel/lumen-framework)
-[![License](https://poser.pugx.org/laravel/lumen-framework/license.svg)](https://packagist.org/packages/laravel/lumen-framework)
+<p><b>First need to install IMAP if your are not already installed</b> <br />
+In ubuntu:<br />
+sudo apt-get install php5-imap<br />
+sudo php5enmod imap<br />
+sudo service apache2 restart<br />
+</p>
 
-Laravel Lumen is a stunningly fast PHP micro-framework for building web applications with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Lumen attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as routing, database abstraction, queueing, and caching.
+<p><b>Create a artisan command </b> <br />
+<b>Note: </b> Lumen doesn't provide artisan command generate command file, We need to create it manually <br />
+Creates a command skeleton in app/Console/Commands/getUserEmailList.php<br />
+You can copy paste the code which in this file into your own file<br />
+<p>
 
-## Official Documentation
+<p><b>Execute the file </b> <br />
+Syntax:
+php artisan read:email [type, emailId, Password] <br /> <br />
+ 
+<b>Note:</b> <br />
+All arguments are optional <br />
+If you want to pass user credentials then need to as 2ed and 3ed parameter <br />
+ 
+<p><b>Default values are</b> <br />
+type: UNSEEN (For more please refer reference link)<br />
+emailId:compassites098@gmail.com<br />
+password:test0987654321<br /><br />
 
-Documentation for the framework can be found on the [Lumen website](http://lumen.laravel.com/docs).
+<b>php artisan read:email </b> <br />
+If we execute this command it will take all default values<br />
+and gets all unread mails <br /><br />
+ 
+<b>php artisan read:email ALL</b> <br />
+Will get all mails from default user account<br /><br />
 
-## Security Vulnerabilities
+<b>php artisan read:email SEEN compassites098@gmail.com test0987654321</b> <br />
+Will get all read mails from given user account<br /><br />
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+<b>TODO</b> <br />
+- Need to add proper validtion for errors<br />
+- Need to customize for all hosts<br /><br />
 
-## License
-
-The Lumen framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+<b>Reference link:</b> <br />
+https://arjunphp.com/reading-emails-from-gmail-using-php-imap/
+</p>
