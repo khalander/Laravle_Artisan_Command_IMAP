@@ -8,9 +8,12 @@ sudo service apache2 restart<br />
 </p>
 
 <p><b>Create a artisan command </b> <br />
-<b>Note: </b> Lumen doesn't provide artisan command generate command file, We need to create it manually <br />
-Creates a command skeleton in app/Console/Commands/getUserEmailList.php<br />
-You can copy paste the code which in this file into your own file<br />
+<b>Note: </b> Lumen doesn't provide artisan command to generate command file, We need to create it manually <br />
+Creates a command skeleton file getUserEmailList.php under app/Console/Commands/ folder<br />
+You can copy paste the code from repo into your own file<br /><br />
+
+<b>Register command</b><br />
+Register your command in the command property in the app/Console/Kernel.php file
 <p>
 
 <p><b>Execute the file </b> <br />
