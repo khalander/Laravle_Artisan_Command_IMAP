@@ -10,8 +10,11 @@ sudo service apache2 restart<br />
 <p><b>Create a artisan command </b> <br />
 php artisan make:console getUserEmailList --command=read:email<br />
 This creates a command skeleton in app/Console/Commands/getUserEmailList.php<br />
-You can copy paste the code which in this file into your own file<br />
-  
+You can copy paste the code which in this file into your own file<br /><br />
+ 
+<b>Register command</b><br />
+Register your command in the command property in the app/Console/Kernel.php file   <br /><br />
+
 <p><b>Execute the file </b> <br />
 Syntax:
 php artisan read:email [type, emailId, Password] <br /> <br />
